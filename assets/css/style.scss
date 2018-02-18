@@ -1,1 +1,184 @@
+---
+---
 
+@import "{{ site.theme }}";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+html {
+    width: 100%;
+    height: 100%
+}
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* ICON FONT
+************** */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("foundation-icons.eot");
+  src: url("foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("foundation-icons.woff") format("woff"),
+       url("foundation-icons.ttf") format("truetype"),
+       url("foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-social-facebook:before,
+.fi-mail:before,
+.fi-social-instagram:before,
+.fi-social-linkedin:before,
+.fi-social-twitter:before,
+.fi-anchor:before,
+.fi-social-medium:before,
+.fi-x:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-social-instagram:before {
+  content: "\f1cd";
+}
+
+.fi-social-linkedin:before {
+  content: "\f1d0";
+}
+
+.fi-social-twitter:before {
+  content: "\f1e4";
+}
+
+.fi-mail:before {
+  content: "\f16d";
+}
+
+.fi-social-medium:before {
+  content: "\f1d1"
+}
+
+/* BASE
+************** */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: "museo-sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #222;
+  background-color: #fff;
+  background-image: url(https://i.pinimg.com/originals/08/7c/17/087c17d62db4d7ace709179c7af64b40.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #2F97C1;
+  padding-bottom: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+::selection {
+  background: #d5eaf2;
+}
+
+
+
+
+/* TYPOGRAPHY
+************** */
+
+p {
+  font-family: droid-serif, serif;
+  font-size: 0.90em;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  margin: 35px 0 0;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#copy {
+  margin: 120px 20px 0;
+  max-width: 380px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: alwyn-new-web, sans-serif;
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 0.9em;
+  font-weight: 100;
+  font-family: alwyn-new-web, sans-serif;
+  color: #999;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: alwyn-new-web, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-top: 25px;
+}
+
+.links {
+  margin-top: 5px !important;
+}
+
+.links a {
+  display: block;
+}
+
+.social-links {
+  padding: 20px 0 0px;
+}
+
+.social-links li {
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.social-links li a {
+  color: #999;
+  font-size: 1.2em;
+}
